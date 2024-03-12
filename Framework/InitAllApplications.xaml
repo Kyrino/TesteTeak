@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1201,2468</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1201,2651</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Initialization_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,7 +111,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="642,2403" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="642,2586" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -119,14 +119,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="580,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[Environment.CurrentDirectory + &quot;\Data\Temp\challenge.xlsx&quot;]" />
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="580,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Rpa Challenge" sap:VirtualizedContainerService.HintSize="580,1960" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1f20eb54-62b8-4b24-84d3-c1332e9f3bec" Version="V2">
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="580,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Abrindo Aplicações&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Rpa Challenge" sap:VirtualizedContainerService.HintSize="580,2143" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1f20eb54-62b8-4b24-84d3-c1332e9f3bec" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,1743" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,1926" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dtChallenge" />
             </Sequence.Variables>
@@ -144,7 +144,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CvElementArea="127, 735, 1158, 24" CvType="InputBox" DesignTimeRectangle="136, 739, 1125, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'challenge (1).xlsx'" FullSelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nome:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nome:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="fb65c936-17a4-44df-bc8f-9c9087aad457" InformativeScreenshot="fb3d662413e52e55812901bf5b4790f2.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CvTextArea="91, 741, 37, 12" CvTextArgument="Nome:" CvType="Text" DesignTimeRectangle="18, 736, 115, 23" ElementType="Text" FriendlyName="'Nome'" FullSelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' /&gt;&lt;ctrl name='Painel do Explorer' role='pane' /&gt;&lt;ctrl name='Painel de Layout de Pastas' role='pane' /&gt;&lt;ctrl name='Painel de Detalhes' role='pane' /&gt;&lt;ctrl name='Nome:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' /&gt;&lt;ctrl name='Painel do Explorer' role='pane' /&gt;&lt;ctrl name='Painel de Layout de Pastas' role='pane' /&gt;&lt;ctrl name='Painel de Detalhes' role='pane' /&gt;&lt;ctrl name='Nome:' role='text' automationid='' check:text='Nome:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -226,6 +226,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
             <ui:BulkAddQueueItems TimeoutMS="{x:Null}" DisplayName="Bulk Add Queue Items" sap:VirtualizedContainerService.HintSize="484,194" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_1" QueueItemsDataTable="[dtChallenge]" QueueName="FilaDeTeste" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Inicialização conccluída&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
